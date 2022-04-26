@@ -1,0 +1,9 @@
+Flask
+blinker
+Flask-RESTful
+Flask-Cors
+flask-restful-swagger-2
+Flask-JSON
+neo4j
+gunicorn
+python-dotenv
