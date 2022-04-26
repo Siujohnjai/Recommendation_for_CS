@@ -1,0 +1,3 @@
+[submodule "flask_server"]
+	path = flask_server
+	url = https://github.com/Siujohnjai/neo4j-movies-template.git
