@@ -11,8 +11,8 @@ Follow the instructions in https://github.com/stanfordnlp/stanza to pip install 
 - `corenlp_wiki.py`: Tokenization of the article and the extraction of tokens' wiki entities
 
 ## Knowledge graph embeddings  (`kg` subfolder)
-This file contains two schemes to get the knowledge graph embedding referencing https://github.com/thunlp/Fast-TransX
-- `wikidata.py`: Requesting for WikiData KG Entities
+This subfolder contains two schemes to get the knowledge graph embedding referencing https://github.com/thunlp/Fast-TransX
+- `wikidata_server.py`: Server for requesting OpenKE WikiData KG entity embeddings
 - `kg_preprocess.py`: Preprocess the data stream for training
 - `Fast-TransX`: THU C++ implementation for KG training
 
@@ -22,11 +22,11 @@ This file contains two schemes to get the knowledge graph embedding referencing 
 - `train.py`: training function of the Tensorflow implementation
 - `main.py`: Microsoft recommenders version implementation of the training flow
 
-## Flask (`flask_server` subfolder)
+## Backend Flask server (`flask_server` subfolder)
 See the readme in the subfolder for more instructions to run the code
 
 ## Wix website (`wix` subfolder)
-These codes are copied from the Wix online editor, where each page is saved independently in a .js file. 
+We wrote the frontend on the Wix online editor. This code is a copy from the editor, where each page is saved independently in a .js file. 
 - `home.js`: HOME page
 - `search.js`: SEARCH page 
 - `collection.js`: COLLECTION page
