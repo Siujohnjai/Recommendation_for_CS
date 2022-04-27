@@ -3,8 +3,7 @@
 Our flask server connects the frontend with the Neo4j database.
 The code takes reference from a template at https://github.com/neo4j-examples/neo4j-movies-template.
 We just amended the Python/Flask backend at `/flask-api` from the template.
-The web frontend can be found at `/web`. 
-We just put the Heroku Deployable version of the flask API in this repo.  
+It includes both the Heroku Deployable version and the development version that can be run at localhost.  
 Feel encouraged to fork and update this repo!
 
 ## The Model
