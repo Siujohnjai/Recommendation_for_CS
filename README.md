@@ -11,10 +11,10 @@ Follow the instructions in https://github.com/stanfordnlp/stanza to pip install 
 - `corenlp_wiki.py`: Tokenization of the article and the extraction of tokens' wiki entities
 
 ## Knowledge graph embeddings  (`kg` subfolder)
-This file contains two schemes to get the knowledge graph embedding
+This file contains two schemes to get the knowledge graph embedding referencing https://github.com/thunlp/Fast-TransX
 - `wikidata.py`: Requesting for WikiData KG Entities
 - `kg_preprocess.py`: Preprocess the data stream for training
-- `Fast-TransX`: C++ implementation for KG training
+- `Fast-TransX`: THU C++ implementation for KG training
 
 ## Recommendation model - DKN (`DKN` subfolder)
 
