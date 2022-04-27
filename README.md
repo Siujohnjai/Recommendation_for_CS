@@ -10,9 +10,13 @@ Follow the instructions in https://github.com/stanfordnlp/stanza to pip install 
 - `corenlp.py`: Extraction of OpenIE triples and their wiki entities
 - `corenlp_wiki.py`: Tokenization of the article and the extraction of tokens' wiki entities
 
-## Knowledge graph embeddings
+## Knowledge graph embeddings  (`kg` subfolder)
+This file contains two schemes to get the knowledge graph embedding
+- `wikidata.py`: Requesting for WikiData KG Entities
+- `kg_preprocess.py`: Preprocess the data stream for training
+- `Fast-TransX`: C++ implementation for KG training
 
-## Recommendation model - DKN
+## Recommendation model - DKN (`DKN` subfolder)
 
 ## Flask (`flask_server` subfolder)
 See the readme in the subfolder for more instructions to run the code
