@@ -17,9 +17,9 @@ See the readme in the subfolder for more instructions to run the code
 
 ## Wix website (`wix` subfolder)
 These codes are copied from the Wix online editor, where each page is saved independently in a .js file. 
-`home.js`: HOME page
-`search.js`: SEARCH page 
-`collection.js`: COLLECTION page
-`interests.js`: INTERESTS page
-`signup.js`: REGISTER page 
-`login.js`: LOGIN page
+- `home.js`: HOME page
+- `search.js`: SEARCH page 
+- `collection.js`: COLLECTION page
+- `interests.js`: INTERESTS page
+- `signup.js`: REGISTER page 
+- `login.js`: LOGIN page
