@@ -10,7 +10,9 @@ Follow the instructions in https://github.com/stanfordnlp/stanza to pip install 
 - `corenlp.py`: Extraction of OpenIE triples and their wiki entities
 - `corenlp_wiki.py`: Tokenization of the article and the extraction of tokens' wiki entities
 
-## DKN
+## Knowledge graph embeddings
+
+## Recommendation model - DKN
 
 ## Flask (`flask_server` subfolder)
 See the readme in the subfolder for more instructions to run the code
