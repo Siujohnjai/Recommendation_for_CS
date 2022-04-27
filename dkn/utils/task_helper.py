@@ -1,9 +1,3 @@
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License.
-#
-# This script contains functions that appear in the tutorial jupyter notebooks (step_1 to step_5).
-# You can find their usage in the corresponding cells from notebooks.
-
 
 import codecs
 import pickle
@@ -18,6 +12,35 @@ from multiprocessing import Process
 from utils.general import *
 from utils.data_helper import *
 
+class MySentenceCollection:
+    def __init__(self, filename):
+        self.filename = filename
+        self.rd = None
+
+    def __iter__(self):
+        self.rd = open(self.filename, 'r', encoding='utf-8', newline='\r\n')
+        return self
+
+    def __next__(self):
+        line = self.rd.readline()
+        if line:
+            return list(line.strip('\r\n').split(' '))
+        else:
+            self.rd.close()
+            raise StopIteration
+
+def train_word2vec(Path_sentences, OutFile_dir):
+    OutFile_word2vec = os.path.join(OutFile_dir, r'word2vec.model')
+    OutFile_word2vec_txt = os.path.join(OutFile_dir, r'word2vec.txt')
+    create_dir(OutFile_dir)
+
+    print('start to train word embedding...', end=' ')
+    my_sentences = MySentenceCollection(Path_sentences)
+    model = Word2Vec(my_sentences, size=50, window=10, min_count=1, workers=8, iter=5) # user more epochs for better accuracy
+
+    model.save(OutFile_word2vec)
+    model.wv.save_word2vec_format(OutFile_word2vec_txt, binary=False)
+    print('\tdone . ')
 
 def gen_paper_content(
     InFile_PaperTitleAbs_bySentence,
