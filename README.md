@@ -17,6 +17,10 @@ This file contains two schemes to get the knowledge graph embedding referencing 
 - `Fast-TransX`: THU C++ implementation for KG training
 
 ## Recommendation model - DKN (`DKN` subfolder)
+-  `data_loader.py`: Data Loader for tensorflow version
+-  `DKN.py`: Tensorflow implementation of the DKN model
+- `train.py`: training function of the Tensorflow implementation
+- `main.py`: Microsoft recommenders version implementation of the training flow
 
 ## Flask (`flask_server` subfolder)
 See the readme in the subfolder for more instructions to run the code
