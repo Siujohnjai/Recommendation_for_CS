@@ -24,7 +24,7 @@ There are only some differences in their config files, so we separated them into
 ## Flask API
 
 You can try to run with the developement version that can easily run on localhost.
-From the root directory of this project:
+From this subfolder:
 
 ```
 cd flask-api
