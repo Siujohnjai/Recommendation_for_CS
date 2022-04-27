@@ -3,7 +3,9 @@
 Our flask server connects the frontend with the Neo4j database.
 The code takes reference from a template at https://github.com/neo4j-examples/neo4j-movies-template.
 We just amended the Python/Flask backend at `/flask-api` from the template.
-It includes both the Heroku deployable version and the development version that can be run at localhost. There are only some differences in the config files, so we separated them into two versions. Here are the files that each version has to use:  
+It includes both the Heroku deployable version and the development version that can be run at localhost. 
+
+There are only some differences in their config files, so we separated them into two versions. Here are the files that each version has to use:  
 - Heroku deployable version: `Procfile_heroku`, `requirements_heroku.txt`, `runtime.txt`
 - Development version: `Procfile`, `requirements.txt`
  
